@@ -1,0 +1,79 @@
+golang-gopkg-tylerb-graceful.v1 (1.2.15-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 21 Aug 2021 11:35:30 +0100
+
+golang-gopkg-tylerb-graceful.v1 (1.2.15-4) unstable; urgency=medium
+
+  * Team upload.
+  * Add link to Github import path.
+
+ -- Alexandre Viau <aviau@debian.org>  Tue, 20 Nov 2018 12:36:19 -0500
+
+golang-gopkg-tylerb-graceful.v1 (1.2.15-3) unstable; urgency=medium
+
+  * Refresh patches
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 18 Nov 2018 15:02:04 -0500
+
+golang-gopkg-tylerb-graceful.v1 (1.2.15-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 11
+  * Set Testsuite to autopkgtest-pkg-go
+  * Update Maintainer address
+  * Fix race in connection state test (Closes: #913993)
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 18 Nov 2018 14:19:41 -0500
+
+golang-gopkg-tylerb-graceful.v1 (1.2.15-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Peter Colberg ]
+  * New upstream release
+  * Set Priority to optional as per policy 4.0.1
+  * Use https for copyright-format URL
+  * Update Standards-Version to 4.2.1
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 17 Nov 2018 12:18:42 -0500
+
+golang-gopkg-tylerb-graceful.v1 (1.2.13-3) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10
+  * Build-depend on golang-any instead of golang-go
+  * Drop dependency on golang-go from -dev package
+  * Update debian/watch to use package name for tarball
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 19 Nov 2016 23:25:47 -0500
+
+golang-gopkg-tylerb-graceful.v1 (1.2.13-2) unstable; urgency=medium
+
+  * Build depend on dh-golang (>= 1.17~) for DH_GOLANG_INSTALL_EXTRA
+
+ -- Peter Colberg <peter@colberg.org>  Thu, 20 Oct 2016 07:58:43 -0400
+
+golang-gopkg-tylerb-graceful.v1 (1.2.13-1) unstable; urgency=medium
+
+  * New upstream release
+  * Install test data
+  * Remove Built-Using field from -dev package
+
+ -- Peter Colberg <peter@colberg.org>  Wed, 19 Oct 2016 07:29:10 -0400
+
+golang-gopkg-tylerb-graceful.v1 (1.2.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * Drop patches applied upstream
+  * Update Standards-Version to 3.9.8
+
+ -- Peter Colberg <peter@colberg.org>  Wed, 18 May 2016 07:25:08 -0400
+
+golang-gopkg-tylerb-graceful.v1 (1.2.4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #817108)
+
+ -- Peter Colberg <peter@colberg.org>  Thu, 10 Mar 2016 07:33:34 -0500

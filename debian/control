@@ -1,0 +1,25 @@
+Source: golang-gopkg-tylerb-graceful.v1
+Section: devel
+Priority: optional
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Peter Colberg <peter@colberg.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-golang (>= 1.17~),
+               golang-any,
+               golang-golang-x-net-dev
+Standards-Version: 4.2.1
+Homepage: https://github.com/tylerb/graceful
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-gopkg-tylerb-graceful.v1
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-gopkg-tylerb-graceful.v1.git
+XS-Go-Import-Path: gopkg.in/tylerb/graceful.v1,
+                   github.com/tylerb/graceful
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-gopkg-tylerb-graceful.v1-dev
+Architecture: all
+Depends: golang-golang-x-net-dev, ${misc:Depends}, ${shlibs:Depends}
+Description: Go package for gracefully shutting down HTTP server
+ This package enables graceful shutdown of a http.Handler server.
+ When the process receives a SIGINT or SIGTERM, the listening
+ port is closed immediately for reuse by another process, while
+ active connections are gracefully terminated after a timeout.

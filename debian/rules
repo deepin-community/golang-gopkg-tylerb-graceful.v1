@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+# Exclude unused manually-run test executable
+export DH_GOLANG_EXCLUDES := tests
+# Install test data
+export DH_GOLANG_INSTALL_EXTRA := test-fixtures
+
+%:
+	dh $@ --buildsystem=golang --with=golang
